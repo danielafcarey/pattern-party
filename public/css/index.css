@@ -33,15 +33,52 @@ header h2 {
 }
 
 .subheader h3 {
-  grid-row-start: span 1;
   width: 100%;
   font-size: 22px;
   font-weight: 300;
 }
 
 .subheader hr {
-  grid-row-start: span 3;
   width: 100%;
   align-self: center;
   border: 0.5px solid #D1D2D3;
 }
+
+.accordian-tabs__container {
+  margin: 0 100px;
+}
+
+.accordian-tabs__container button {
+  width: 24.5%;
+  height: 50px;
+  padding: 0;
+  border: 1px solid #F2F2F2;
+  background: #F2F2F2;
+}
+
+.accordian-tabs__body {
+  display: grid;
+  grid-template-columns: 250px calc(100% - 250px);
+  padding: 20px;
+  overflow: scroll;
+}
+
+.accordian-tabs__body img {
+  grid-area: 1/1/2/2;
+}
+
+.accordian-tabs__body--container {
+  grid-area: 1/2/2/3;
+  padding-left: 30px;
+}
+
+.accordian-tabs__body hr {
+  width: 100%;
+  border: 0.5px solid #D1D2D3;
+}
+
+.accordian-tabs__body p {
+  line-height: 23px;
+}
+
+

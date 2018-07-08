@@ -63,4 +63,12 @@ section {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 720px) {
+  .subheader {
+    margin: 20px 30px;
+  }
+}
 
+@media only screen and (max-width: 510px) {
+  /* fix name in header */ 
+}

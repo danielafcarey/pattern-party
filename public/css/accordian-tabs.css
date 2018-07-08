@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.accordian-tabs__container button:focus {
+  outline: none;
+}
+
 .accordian-tabs__container button.selected {
   background: white;
   border: 1px solid #D1D2D3;
@@ -36,12 +40,15 @@
 
 .accordian-tabs__body img {
   grid-area: 1/1/2/2;
+  width: 100%;
+  border: 1px solid #D1D2D3;
+  align-self: center;
 }
 
 .accordian-tabs__body--container {
   grid-area: 1/2/2/3;
   padding-left: 30px;
-  max-height: 300px;
+  max-height: 320px;
   overflow: scroll;
 }
 
@@ -52,4 +59,27 @@
 
 .accordian-tabs__body p {
   line-height: 23px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .accordian-tabs__body {
+    grid-template-columns: 150px calc(100% - 150px);
+  }
+
+  .accordian-tabs__container {
+    margin: 0 50px;
+  }
+
+  .accordian-tabs__body--container {
+    max-height: 245px;
+  }
+
+  .accordian-tabs__body h2 {
+    font-size: 20px;
+  }
+
 }

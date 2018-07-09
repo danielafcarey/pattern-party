@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+  // Accordian Tabs
   $('.accordian-tabs__container').on('click', 'button', changeTab);
   $('.view-code').on('click', openCodePen);
 
@@ -42,4 +44,14 @@ $( document ).ready(function() {
         break;
     }
   }
+
+
+  // Flexible Cards
+
+
+
+  // Header Bar
+
+
+
 });

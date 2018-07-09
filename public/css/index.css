@@ -1,4 +1,6 @@
 @import './accordian-tabs.css';
+@import './flexible-cards.css';
+@import './header-bar.css';
 
 body {
   margin: 0 auto;

@@ -71,4 +71,20 @@ section {
 
 @media only screen and (max-width: 510px) {
   /* fix name in header */ 
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 0 0 0;
+  }
+
+  header h2 {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+  }
 }

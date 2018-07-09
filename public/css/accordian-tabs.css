@@ -83,3 +83,29 @@
   }
 
 }
+
+@media only screen and (max-width: 510px) {
+  .accordian-tabs__container button {
+    font-size: 14px;
+  }
+
+  .accordian-tabs__body {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .accordian-tabs__body img {
+    grid-area: 1/1/2/3;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .accordian-tabs__body--container {
+    grid-area: 2/1/3/3;
+    padding: 5px;
+  }
+
+  .accordian-tabs__body h2 {
+    text-align: center;
+  }
+
+}

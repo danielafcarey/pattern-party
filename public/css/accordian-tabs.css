@@ -1,0 +1,111 @@
+.accordian-tabs__container {
+  margin: 0 100px;
+}
+
+.accordian-tabs__container button {
+  width: 25%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background: #F2F2F2;
+  color: #666666;
+  margin: -2px;
+  border-bottom: 1px solid #D1D2D3;
+  border-left: 1px solid white;
+}
+
+.accordian-tabs__container button:hover {
+  cursor: pointer;
+}
+
+.accordian-tabs__container button:focus {
+  outline: none;
+}
+
+.accordian-tabs__container button.selected {
+  background: white;
+  border: 1px solid #D1D2D3;
+  border-bottom: none;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.accordian-tabs__body {
+  display: grid;
+  grid-template-columns: 250px calc(100% - 250px);
+  padding: 20px;
+  border: 1px solid #D1D2D3;
+  border-top: none;
+}
+
+.accordian-tabs__body img {
+  grid-area: 1/1/2/2;
+  width: 100%;
+  border: 1px solid #D1D2D3;
+  align-self: center;
+}
+
+.accordian-tabs__body--container {
+  grid-area: 1/2/2/3;
+  padding-left: 30px;
+  max-height: 320px;
+  overflow: scroll;
+}
+
+.accordian-tabs__body hr {
+  width: 100%;
+  border: 0.5px solid #D1D2D3;
+}
+
+.accordian-tabs__body p {
+  line-height: 23px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .accordian-tabs__body {
+    grid-template-columns: 150px calc(100% - 150px);
+  }
+
+  .accordian-tabs__container {
+    margin: 0 50px;
+  }
+
+  .accordian-tabs__body--container {
+    max-height: 245px;
+  }
+
+  .accordian-tabs__body h2 {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 510px) {
+  .accordian-tabs__container button {
+    font-size: 14px;
+  }
+
+  .accordian-tabs__body {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .accordian-tabs__body img {
+    grid-area: 1/1/2/3;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .accordian-tabs__body--container {
+    grid-area: 2/1/3/3;
+    padding: 5px;
+  }
+
+  .accordian-tabs__body h2 {
+    text-align: center;
+  }
+
+}

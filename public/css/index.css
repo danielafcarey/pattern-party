@@ -29,7 +29,7 @@ header h2 {
 
 .subheader {
   display: grid;
-  grid-template-columns: 220px calc(100% - 220px);
+  grid-template-columns: 200px calc(100% - 200px);
   margin: 20px 70px;
 }
 
@@ -56,6 +56,10 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 section {

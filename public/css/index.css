@@ -1,7 +1,9 @@
 @import './accordian-tabs.css';
+@import './flexible-cards.css';
+@import './header-bar.css';
 
 body {
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -68,13 +70,6 @@ section {
 }
 
 @media only screen and (max-width: 720px) {
-  .subheader {
-    margin: 20px 30px;
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  /* fix name in header */ 
   header {
     text-align: center;
   }
@@ -82,13 +77,13 @@ section {
   header h1 {
     display: block;
     margin: 0 auto;
-    padding: 6px 0 0 0;
+    padding: 6px 0 10px 0;
   }
 
   header h2 {
     float: none;
     margin: 0 auto;
     padding: 0;
-    font-size: 18px;
+    font-size: 14px;
   }
 }

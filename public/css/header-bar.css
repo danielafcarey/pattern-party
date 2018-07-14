@@ -18,9 +18,18 @@
 .header-bar a {
   color: #666666;
   text-decoration: none;
-  margin 0 20px;
+  margin: 0 20px;
+  font-size: 18px;
 }
 
 .header-bar input {
-  margin 0 20px;
+  margin: 0 20px;
+  font-size: 18px;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.header-bar input::placeholder {
+  background: url(../search.png) no-repeat;
+  padding-left: 30px;
 }

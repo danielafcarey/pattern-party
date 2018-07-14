@@ -3,7 +3,7 @@
 @import './header-bar.css';
 
 body {
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   font-family: 'Open Sans', sans-serif;
 }
 

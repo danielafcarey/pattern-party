@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-  // Accordian Tabs
   $('.accordian-tabs__container').on('click', 'button', changeTab);
   $('.view-code').on('click', openCodePen);
 
@@ -45,12 +44,6 @@ $( document ).ready(function() {
     }
   }
 
-
-  // Flexible Cards
-
-
-
-  // Header Bar
 
 
 

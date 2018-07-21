@@ -33,3 +33,25 @@
   background: url(../search.png) no-repeat;
   padding-left: 30px;
 }
+
+.header-bar button {
+  display: none;
+}
+
+@media only screen and (max-width: 1145px) {
+  .header-bar nav, 
+  .header-bar input {
+    display: none;
+  }
+
+  .header-bar button {
+    display: inline-block;
+    color: #666666;
+    font-weight: 300;
+    background: none;
+    border: none;
+    width: 150px;
+    font-size: 25px;
+    margin: 0;
+  }
+}

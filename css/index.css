@@ -74,6 +74,10 @@ section {
     text-align: center;
   }
 
+  .header-bar {
+    text-align: left;
+  }
+
   header h1 {
     display: block;
     margin: 0 auto;

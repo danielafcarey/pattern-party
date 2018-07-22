@@ -51,7 +51,8 @@ $( document ).ready(function() {
   $('.header-bar').on('click', 'button', showMenu);
 
   function showMenu(event) {
-    console.log(event)
+    $('.header-bar nav, .header-bar input').toggleClass('expanded-menu')
+    $('.header-bar').toggleClass('extended-height') 
   }
 
 

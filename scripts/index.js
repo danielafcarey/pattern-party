@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+
+  // ACCORDIAN TABS
   $('.accordian-tabs__container').on('click', 'button', changeTab);
   $('.view-code').on('click', openCodePen);
 
@@ -45,6 +47,12 @@ $( document ).ready(function() {
   }
 
 
+  // HEADER BAR
+  $('.header-bar').on('click', 'button', showMenu);
+
+  function showMenu(event) {
+    console.log(event)
+  }
 
 
 });

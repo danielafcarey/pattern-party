@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
-  // Accordian Tabs
+
+  // ACCORDIAN TABS
   $('.accordian-tabs__container').on('click', 'button', changeTab);
   $('.view-code').on('click', openCodePen);
 
@@ -46,12 +47,13 @@ $( document ).ready(function() {
   }
 
 
-  // Flexible Cards
+  // HEADER BAR
+  $('.header-bar').on('click', 'button', showMenu);
 
-
-
-  // Header Bar
-
+  function showMenu(event) {
+    $('.header-bar nav, .header-bar input').toggleClass('expanded-menu')
+    $('.header-bar').toggleClass('extended-height') 
+  }
 
 
 });

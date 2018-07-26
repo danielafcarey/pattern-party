@@ -81,3 +81,8 @@
   }
 }
 
+@media only screen and (max-width: 520px) {
+  .header-bar {
+    margin: 0 50px;
+  }
+}

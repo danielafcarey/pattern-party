@@ -90,4 +90,12 @@ section {
     padding: 0;
     font-size: 14px;
   }
+
+  .subheader {
+    margin: 20px 30px;
+  }
+
+  button {
+    width: 320px;
+  }
 }
